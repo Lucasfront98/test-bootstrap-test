@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap-ex</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .carousel > img{
+            height: 600px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header id="cabecalho">
+        <div class="navbar navbar-expang-lg">
+        <h1>Lib bootstrap</h1>
+        <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class=" collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#Início">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel-imgs">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cards">Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Início">Início</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="carousel carousel-fade slide" id="carousel-imgs" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="1500" class="carousel-item active">
+                <img src="./img/vue.jpeg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h3>Vue.js</h3>
+                </div>
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./img/react.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h3>React.js</h3>
+                </div>
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./img/angular.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h3>Angular.js</h3>
+                </div>
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./img/javascript.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-imgs" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>    
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-imgs" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-imgs" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-imgs" data-bs-slide-to="1" class="active"></button>
+            <button type="button" data-bs-target="#carousel-imgs" data-bs-slide-to="2" class="active"></button>
+            <button type="button" data-bs-target="#carousel-imgs" data-bs-slide-to="3" class="active"></button>
+        </div>    
+    </div>
+    </div>
+    <div class="container-fluid">
+    <h2>Cards</h2>
+    <div class="row" id="cards">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer " >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>    
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer" >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer " >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer " >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer " >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <header class="card-header">
+                    <H2>Título no header</H2>
+                </header>
+                <img src="./img/card-img.webp" alt="">
+                <div class="card-body">
+                <h3 class="card-tittle">título do card</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo possimus eius perferendis </P>
+                <a href="#" class="btn btn-primary">Leia mais...</a>
+                <footer class="card-footer " >
+                    <time>04/04/2024 ás 18:00</time>
+                </footer>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
